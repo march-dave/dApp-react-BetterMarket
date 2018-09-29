@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*** The Essential Code ***/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    margin: 0;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}

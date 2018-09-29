@@ -1,0 +1,26 @@
+[{
+        "id": 0,
+        "type": "TTC Picture",
+        "note": "The Toronto Transit Commission is a public transport agency that operates bus, subway, streetcar, and paratransit services in Toronto, Ontario, Canada....",
+        "picture": "src/images/ttc-pic.jpg",
+        "area": "Toronto",
+        "price": 1.23
+    },
+    {
+        "id": 1,
+        "type": "Blue Mix",
+        "note": "Explore Blue Sky",
+        "picture": "src/images/bluemix-pic.jpg",
+        "area": "115/76",
+        "price": 1.56
+    },
+    {
+        "id": 2,
+        "type": "Town Picture",
+        "note": "Wall Art City Canvas Prints Decor City Decorations Modern Artwork for Beautiful City Pictures",
+        "picture": "src/images/town-pic.jpg",
+        "area": "115/76",
+        "price": 1.56
+    }
+
+]
