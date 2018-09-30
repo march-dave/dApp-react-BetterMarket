@@ -5,7 +5,6 @@ contract BetterMarket {
         address buyerAddress;
         bytes32 name;
         uint age;
-
     }
     
     mapping (uint => Buyer) public buyerInfo;
@@ -22,7 +21,7 @@ contract BetterMarket {
     }
 
     function buyBetterMarket(uint _id, bytes32 _name, uint _age) public payable {
-        require(_id >= 0 && _id <= 10);
+        require(_id >= 0 && _id <= 9);
         buyers[_id] = msg.sender;
         buyerInfo[_id] = Buyer(msg.sender, _name, _age);
 
