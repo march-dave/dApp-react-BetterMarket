@@ -4,7 +4,7 @@ import Web3 from "web3";
 
 import TruffleContract from "truffle-contract";
 import BetterMarket from "../../build/contracts/BetterMarket.json";
-import SmartPay from "../../build/contracts/SmartPay.json";
+// import SmartPay from "../../build/contracts/SmartPay.json";
 import data from "../data.json";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
@@ -118,26 +118,28 @@ class App extends React.Component {
               .eq(i)
               .find("img")
               .attr("src")
-              .substr(11);
+              .substr(21);
+
+              console.log('imgType: ' + imgType);
 
             switch (imgType) {
-              case "ttc-pic.jpg":
+              case "QmaA49MkdTD5wQmYQz3jABUmjaS7nHJXt7Hdh6Tkw1912u":
                 $(".panel-betterMarket")
                   .eq(i)
                   .find("img")
-                  .attr("src", "src/images/ttc-pic-sold.jpg");
+                  .attr("src", "https://ipfs.io/ipfs/QmY1oBSi5EttJQVnwkBNTZ233ZKVzPLWsWtBWxPEojVWcD");
                 break;
-              case "bluemix-pic.jpg":
+              case "QmZ799f5fXymwKRyXZHHGW52S512Mr3BwmunUAoMkeBLn4":
                 $(".panel-betterMarket")
                   .eq(i)
                   .find("img")
-                  .attr("src", "src/images/bluemix-pic-sold.png");
+                  .attr("src", "https://ipfs.io/ipfs/QmRzWoDoReXp4iSDRZ8QCwf5NW6eVxiwHnuLp4Ux3yPF4u");
                 break;
-              case "town-pic.jpg":
+              case "Qmd7gbpwWiMw5WJ3MiwLnfaoyVpcy5PMWBY9QdeUgwo5SA":
                 $(".panel-betterMarket")
                   .eq(i)
                   .find("img")
-                  .attr("src", "src/images/town-pic-sold.png");
+                  .attr("src", "https://ipfs.io/ipfs/Qmdq7wms3rCaNagp9iN1naUK3PcipsFhx2iRCuoqCAUfP1");
                 break;
             }
 
@@ -195,7 +197,7 @@ class App extends React.Component {
       <div className="container-fluid">
         <div
           className="row"
-          style={{ background: "#64b5f6", height: "50px", color: "#FFF" }}
+          // style={{ background: "#64b5f6", height: "50px", color: "#FFF" }}
         >
           <div className="col-sm">
             {/* <img
@@ -213,7 +215,7 @@ class App extends React.Component {
           </div>
         </div>
 
-        <div id="events">
+        {/* <div id="events">
           {this.state.events.map(c => {
             return (
               <div>
@@ -221,7 +223,7 @@ class App extends React.Component {
               </div>
             );
           })}
-        </div>
+        </div> */}
 
         {/* image toggle based on true or false */}
 
@@ -361,6 +363,16 @@ class App extends React.Component {
               </div>
             </div>
           </div>
+        </div>
+
+         <div id="events">
+          {this.state.events.map(c => {
+            return (
+              <div>
+                {c.buyer} From Account {c.id} # bought this product.
+              </div>
+            );
+          })}
         </div>
 
       </div>
