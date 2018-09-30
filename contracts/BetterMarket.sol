@@ -39,14 +39,14 @@ contract BetterMarket {
     }
 }
 
-contract AdPerformance {
-    address owner;
-    address beneficiary;
-    uint gweiToPayPerView;
-    string youtubeId;
-    bool withdrawn;
+// contract AdPerformance {
+//     address owner;
+//     address beneficiary;
+//     uint gweiToPayPerView;
+//     string youtubeId;
+//     bool withdrawn;
     
-    constructor() public {
-        owner = msg.sender;
-    }
-}
+//     constructor() public {
+//         owner = msg.sender;
+//     }
+// }
