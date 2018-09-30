@@ -1,8 +1,8 @@
 const BetterMarket = artifacts.require("./BetterMarket.sol");
-const AdPerformance = artifacts.require("./AdPerformance.sol");
+const SmartPay = artifacts.require("./SmartPay.sol");
 
 module.exports = function(deployer) {
   deployer.deploy(BetterMarket);
-  deployer.deploy(AdPerformance);
+  deployer.deploy(SmartPay);
 };
 
