@@ -1,4 +1,4 @@
-leaimport React from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import Web3 from "web3";
 
