@@ -6,7 +6,7 @@ contract BetterMarket {
         bytes32 name;
         uint age;
     }
-
+    
     mapping (uint => Buyer) public buyerInfo;
     address public owner;
     address[10] public buyers;
@@ -36,5 +36,17 @@ contract BetterMarket {
 
     function getAllBuyers() public view returns (address[10]) {
         return buyers;
+    }
+}
+
+contract AdPerformance {
+    address owner;
+    address beneficiary;
+    uint gweiToPayPerView;
+    string youtubeId;
+    bool withdrawn;
+    
+    constructor() public {
+        owner = msg.sender;
     }
 }
