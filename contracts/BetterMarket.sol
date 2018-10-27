@@ -5,7 +5,6 @@ contract BetterMarket {
         address buyerAddress;
         bytes32 name;
         uint age;
-        bytes32 location;
     }
     
     mapping (uint => Buyer) public buyerInfo;
